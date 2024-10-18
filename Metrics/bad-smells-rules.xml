@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset name="Maintainability Focused Ruleset"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+    <description>
+        This ruleset is tailored to enhance maintainability by addressing complexity, code structure, error handling, and best practices.
+    </description>
+
+    <!-- Complexity and Readability -->
+    <rule ref="category/java/design.xml/CyclomaticComplexity"/>
+    <rule ref="category/java/design.xml/NPathComplexity"/>
+    <rule ref="category/java/design.xml/TooManyMethods"/>
+
+    <!-- Code Structure and Design -->
+    <rule ref="category/java/design.xml/GodClass"/>
+    <rule ref="category/java/design.xml/DataClass"/>
+    <rule ref="category/java/design.xml/LawOfDemeter"/>
+
+    <!-- Error Handling and Resource Management -->
+    <rule ref="category/java/bestpractices.xml/UseTryWithResources"/>
+
+    <!-- Best Practices and Code Cleanliness -->
+    <rule ref="category/java/bestpractices.xml/UnusedLocalVariable"/>
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateMethod"/>
+    <rule ref="category/java/bestpractices.xml/UseCollectionIsEmpty"/>
+
+</ruleset>
